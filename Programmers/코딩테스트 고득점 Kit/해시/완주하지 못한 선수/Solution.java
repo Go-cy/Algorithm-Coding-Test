@@ -4,6 +4,10 @@
 // equals()는 C#과 같이 모든 객체의 부모클래스에서 object 형식으로 구현되어 있어 동일하게 사용 가능할듯
 // 해쉬풀이는 하단에 추가로 풀었음.
 
+// ---> C#에서 String의 비교는 내부적으로 overloading을 이용해 equals() 연산을 수행하게 설계되어있음.
+// 그러나 주의할 점은 String끼리의 비교만 가능, object 타입에 String값이 들어가있다 하면 java와 마찬가지로 생각과는 다른 결과가 도출됨. (출처 : https://hanavy.tistory.com/10)
+
+
 import java.util.Arrays;
 import java.util.Objects;
 
