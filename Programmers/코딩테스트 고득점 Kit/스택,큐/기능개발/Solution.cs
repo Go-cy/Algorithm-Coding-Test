@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+//.Net 6는 Linq 추가 안해도 가능한데 이전버전에선 반드시 추가해야하는듯,, 이것때문에 시간 개날림
+
 public class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
      
