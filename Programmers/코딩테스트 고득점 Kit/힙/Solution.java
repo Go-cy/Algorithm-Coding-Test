@@ -1,3 +1,29 @@
+//PriorityQueue 개꿀,,
+import java.util.PriorityQueue ;
+
+class Solution {
+    public int solution(int[] scoville, int K) {
+        int answer = 0;
+        
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        
+        for(int _scoville : scoville)
+        {
+            priorityQueue.offer(_scoville);
+        }
+        
+        while(priorityQueue.peek() <= K)
+        {
+            if(priorityQueue.size() == 1)
+                return -1;
+            priorityQueue.offer( priorityQueue.poll() + 2 * priorityQueue.poll() );
+            answer++;
+        }
+        
+        return answer;
+    }
+}
+
 
 //효율성 실패
 /*
