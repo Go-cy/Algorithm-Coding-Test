@@ -1,4 +1,4 @@
-//PriorityQueue 개꿀,,
+//PriorityQueue 개꿀,, C#은 왜,, https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/blob/master/Priority%20Queue/FastPriorityQueue.cs C# 구현 참고
 import java.util.PriorityQueue ;
 
 class Solution {
