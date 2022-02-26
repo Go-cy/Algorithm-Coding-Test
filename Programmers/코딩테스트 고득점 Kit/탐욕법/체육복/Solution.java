@@ -1,8 +1,6 @@
 import java.util.*;
 
 class Solution {
-    public static ArrayList<Integer> result;
-    
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = 0;
         int[] students = new int[n];
