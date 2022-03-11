@@ -30,3 +30,26 @@ public class Main{
         }
     }
 }
+
+
+
+
+
+//------------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int number = Integer.parseInt(br.readLine());
+        int count = 0;
+        int result = number;
+        do {
+            result = ((result % 10) * 10) + (((result / 10) + (result % 10)) % 10);
+            count++;
+        } while (number != result);
+
+        System.out.println(count);
+    }
+}
