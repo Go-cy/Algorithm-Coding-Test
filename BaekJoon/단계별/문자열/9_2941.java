@@ -28,14 +28,10 @@ public class Main{
                     if (input.charAt(i + 1) == '-') i++;
                     break;
                 case 'l':
-                    if (input.charAt(i + 1) == 'j') i++;
-                    break;
                 case 'n':
                     if (input.charAt(i + 1) == 'j') i++;
                     break;
                 case 's':
-                    if (input.charAt(i + 1) == '=') i++;
-                    break;
                 case 'z':
                     if (input.charAt(i + 1) == '=') i++;
                     break;
