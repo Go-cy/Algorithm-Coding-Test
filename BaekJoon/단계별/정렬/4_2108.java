@@ -27,16 +27,14 @@ public class Main {
         }
 
         int maxValue = Collections.max(hashMap.values());
-        int maxcnt = 0;
         List<Integer> maxList = new ArrayList<>();
 
         for(Integer temp : hashMap.keySet()){
             if(hashMap.get(temp) == maxValue){
-                maxcnt++;
                 maxList.add(temp);
             }
         }
-        if(maxcnt > 1){
+        if(maxList.size() > 1){
             Collections.sort(maxList);
             bw.write(String.valueOf(maxList.get(1)) + "\n");
         }
