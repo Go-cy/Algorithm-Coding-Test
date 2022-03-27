@@ -15,8 +15,6 @@ public class Main {
         }
         br.close();
 
-        Arrays.sort(input, Comparator.comparingInt(o1 -> o1[0]));
-
         Arrays.sort(input, ((o1, o2) -> {
             if(o1[1] == o2[1]){
                 return o1[0] - o2[0];
