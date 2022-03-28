@@ -9,8 +9,6 @@ public class Main {
         int[] input = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         br.close();
 
-        StringBuilder sb = new StringBuilder();
-        StringBuilder remain = new StringBuilder();
         boolean[] use = new boolean[input[0]+1];
         int[] result = new int[input[1]];
 
